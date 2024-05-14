@@ -12,7 +12,7 @@ This branch contains documentation files for the DayStory application.
 ## Description
 
 These documentation files include the requirements, design, and product manual for the DayStory application. Please review the documents for more information on the development and usage of the project.
-# Documentation
+# Dökümantasyon
 
 Bu şube, DayStory uygulaması için belgelendirme dosyalarını içerir.
 
