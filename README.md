@@ -18,8 +18,8 @@ Bu şube, DayStory uygulaması için belgelendirme dosyalarını içerir.
 
 ## İçerik
 
-- [Gereksinim Belirtimi Dokümanı](Requirement_specification_document.pdf)
-- [Tasarım Spesifikasyonu Dokümanı](Design_specification_document.pdf)
+- [Gereksinim Belirtimi Dokümanı](https://github.com/Mobven-Team3/DayStory-QA/blob/documentation/StoryCrafters%20requirement%20specification%20document.zip)
+- [Tasarım Spesifikasyonu Dokümanı](https://github.com/Mobven-Team3/DayStory-QA/blob/documentation/StoryCrafters%20Design%20Specification%20Document.zip)
 - Ürün Kılavuzu
 
 ## Açıklama
