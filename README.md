@@ -5,8 +5,8 @@ This branch contains documentation files for the DayStory application.
 
 ## Contents
 
-- [Requirement Specification Document](Requirement_specification_document.pdf)
-- [Design Specification Document](Design_specification_document.pdf)
+- [Requirement Specification Document](https://github.com/Mobven-Team3/DayStory-QA/blob/documentation/StoryCrafters%20requirement%20specification%20document.zip)
+- [Design Specification Document](https://github.com/Mobven-Team3/DayStory-QA/blob/documentation/StoryCrafters%20Design%20Specification%20Document.zip)
 - Product Manual
 
 ## Description
