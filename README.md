@@ -50,19 +50,18 @@ Bu rehber, Overleaf üzerinde bir LaTeX dosyasını zip dosyası olarak nasıl a
 ## Örnek Resimli Anlatım
 
 ### 1. Overleaf Hesabınıza Giriş Yapın
-![Overleaf Giriş](https://example.com/login_screenshot.png)
+
 
 ### 2. Yeni Proje Oluşturun
-![Yeni Proje](https://example.com/new_project_screenshot.png)
+![Yeni Proje](https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/0/08/Step1NewProject.png)
 
 ### 3. Zip Dosyasını Yükleyin
-![Zip Yükleme](https://example.com/upload_zip_screenshot.png)
+![Zip Yükleme](https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/4/46/UploadZIPfile4.png)
 
 ### 4. Projenizi Düzenleyin
-![Proje Düzenleme](https://example.com/edit_project_screenshot.png)
+![Proje Düzenleme](https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/c/c6/UploadedProject.png)
 
 ## Yardım ve Destek
-
-Herhangi bir sorun yaşarsanız veya yardıma ihtiyacınız olursa, [Overleaf Destek](https://www.overleaf.com/contact) ile iletişime geçebilirsiniz.
+ sorular ve contribution için StoryCrafters Discord kanalına başvurun.
 
 
