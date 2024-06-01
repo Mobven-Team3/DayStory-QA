@@ -1,0 +1,893 @@
+///,Daystory web App - https://deneme-aysu-repo.vercel.app/,,,,,,,,,,,,,,,,,,
+Test Tekniği,Wb test run ,,,,,,,,,,,,,,,,,,
+Test Türü,Functional - UI Tests,,,,,1. jira da rapor alırken sprint başlatmak gerekir,,,,,,,,,,,,,
+TestRun, Day Story Manuel Web Tests,,,,,2. docs - jira - trello iş yükğü artması,,,,,,,,,,,,,
+CreatedBy,Emre Görkem Ağkurt,,,,,,,,,,,,,,,,,,
+CreatedDate,29 Mayıs 2024,,,,,,,,,,,,,,,,,,
+App version,Rev Alpha 1.0,,,,,,,,,,,,,,,,,,
+Environment,Test Environtment,,,,,,,,,,,,,,,,,,
+Browser,Microsoft Edge - Version 125.0.2535.67 (Official build) (arm64),,,,,,,,,,,,,,,,,,
+Device,Macbook Pro M3 ,,,,,,,,,,,,,,,,,,
+Operating System,Macos 14.4 - Sonoma ,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+Scenerio Type,Test ID,Modül/Section/page,Case Title,Priority,Test Objective,Pre-Condition,"Device İnfo/ 
+Browser info", Steps,Test Data,Expected Result,Actual Result,Who,Created,Last Update,Bug Id & Proof,Description/ Problem/ Bug Title,Status,,
+POSITIVE,TC-001,Registration Page,Registiration sayfası web elementlerinin görüntülenmesii ,Medium,Hesap Açma Modülündeki web elementlerin görüntülendiğinin doğrulanır,Web sitesi erişilebilir olmalı,,"1.Web sitesine gidilir, Kayıt ol ekranına tıklanır
+2.Welcome Sayfasında ürün Logosunun görüntülendiği Doğrulanır
+3.Sol üst köşede ""DayStory"" webelementinin görüntülendiği doğrulanır
+4.""Her sayfanın bir hikaye anlattığı yer"" web elementinin görüntülendiği doğrulanır
+5.""Sizin anılarınızı kalıcı hale getiriyoruz"" web elementinin görüntülendiği doğrulanır
+6.""Yeni hesap oluştur"" web elementinin görüntülendiği doğrulanır
+7.""Kişisel bilgilerinizi giriniz"" web elementinin görüntülendiği doğrulanır
+8.isim-soyisim-cinsiyet doğum tarihi web elementlerinin görüntülendiği doğrulanır
+9.devam butonunun görüntülenddiği doğrulanır
+10""Zaten Hesabın var mı?Giriş Yap"" web elementlerinin görüntülendiği doğrulanır",,"1.Kullanıcı başarılı bir şekilde  adresine gidebilmeli, Yeni hesap olustur sayfasını görmeli
+2.Welcome Sayfasında ürün Logosu görüntülenmeli
+3.Sol üst köşede ""DayStory"" webelementinin görüntülenmeli
+4.""Her sayfanın bir hikaye anlattığı yer"" web elementi görüntülenmeli
+5.""Sizin anılarınızı kalıcı hale getiriyoruz"" web elementii görüntülenmeli
+6.""Yeni hesap oluştur"" web elementi görüntülenmeli
+7.""Kişisel bilgilerinizi giriniz"" web elementi görüntülenmeli
+8.isim-soyisim-cinsiyet doğum tarihi web elementleri görüntülenmeli
+devam et butonu görüntülenmeli
+9.""Zaten Hesabın var mı?Giriş Yap"" web elementi görüntülenmeli","1.Kullanıcı başarılı bir şekilde  adresine gidebiliyor
+2.Welcome Sayfasında ürün Logosu görüntüleniyor
+3.Sol üst köşede ""DayStory"" webelementinin görüntüleniyor
+4.""Her sayfanın bir hikaye anlattığı yer"" web elementi görüntüleniyor
+5.""Sizin anılarınızı kalıcı hale getiriyoruz"" web elementii görüntüleniyor
+6.""Yeni hesap oluştur"" web elementi görüntüleniyor
+7.""Kişisel bilgilerinizi giriniz"" web elementi görüntüleniyor
+8.isim-soyisim-cinsiyet doğum tarihi web elementleri görüntüleniyor
+devam et butonu görüntüleniyor
+9.""Zaten Hesabın var mı?Giriş Yap"" web elementi görüntüleniyor",QA - GÖRKEM,29.05.2024,29.05.2024,,,Passed,,
+POSITIVE,TC-002,Registration Page,Registiration Tests- geçerli verilerle kaydolma,Critical,Kullanıcı geçerli verilerle uygulamaya kaydolunduğu doğrulanır,Web sitesi erişilebilir olmalı,,"1.Web sitesine gidilir. Kayıt ol ekranına tıklanır
+2.İsim Kutusuna geçerli bir veri girilir
+3.Soyisim Kutusuna geçerli bir veri girilir
+4.Cinsiyet Dropdownından seçim yapılır
+5.Doğum Tarihi kutusuna geçerli bir veri girilir
+6.Devam butonuna tıklanır
+7.Email kutusuna geçerli bir veri girilir
+8.Kullanıcı adı kutusuna geçerli bir veri girilir
+9.Şifre kutusuna geçerli bir veri girilir
+10.Şifre tekrarı kutusuna geçerli bir veri girilir
+11.Kayıt Ol butonuna tıklanır","
+Harry
+Potter
+Erkek
+01/01/2000
+
+harry@gmail.com
+Harry
+HarryP1.
+HarryP1.",kayıt işlemi gerçekleşmeli,Tüm adımlar başarıyla tamamlandı. Kayıt işlemi gerçekleştirildi ve kullanıcı başarıyla oluşturuldu. Kayıt işlemi sonrasında kullanıcı giriş yapabilir durumdadır.,QA - GÖRKEM,29.05.2024,29.05.2024,,,Passed,,
+NEGATIVE,TC-003,Registration Page,Registiration Tests- kayıtlı kullanıcının kullanıcı adıyla yeniden kaydolmayı denemesi,Critical,Kayıtlı kullanıcı adıyla yeniden kaydolunmadığı doğrulanır,Web sitesi erişilebilir olmalı,,"1.Web sitesine gidilir, Kayıt ol ekranına tıklanır
+2.İsim Kutusuna kayıtlı kullanıcı adı girilir
+3.Soyisim Kutusuna geçerli bir veri girilir
+4.Cinsiyet Dropdownından seçim yapılır
+5.Doğum Tarihi kutusuna geçerli bir veri girilir
+6.Devam butonuna tıklanır
+7.Email kutusuna geçerli bir veri girilir
+8.Kullanıcı adı kutusuna kayıtlı kullanıcı adı girilir
+9.Şifre kutusuna geçerli bir veri girilir
+10.Şifre tekrarı kutusuna geçerli bir veri girilir
+11.Kayıt Ol butonuna tıklanır","
+Harry
+Potter
+Erkek
+01/01/2000
+
+harry@gmail.com
+Harry
+HarryP1.
+HarryP1.
+",uyarı mesajı alınmalıdır,"backend bekleniyor
+kayıtlı kullanıcının tutuldugu bir database yok",QA - GÖRKEM,29.05.2024,29.05.2024,,,Blocked,,
+NEGATIVE,TC-004,Registration Page,Registiration Tests- kayıtlı kullanıcının email adresiyle yeniden kaydolmayı denemesi,Critical,Kayıtlı email adresiyle yeniden kaydolunmadığı doğrulanır,Web sitesi erişilebilir olmalı,,"1.Web sitesine gidilir/ Kayıt ol ekranına tıklanır
+2.İsim Kutusuna geçerli kullanıcı adı girilir
+3.Soyisim Kutusuna geçerli bir veri girilir
+4.Cinsiyet Dropdownından seçim yapılır
+5.Doğum Tarihi kutusuna geçerli bir veri girilir
+6.Devam butonuna tıklanır
+7.Email kutusuna kayıtlı email adresi girilir
+8.Kullanıcı adı kutusuna kayıtlı kullanıcı adı girilir
+9.Şifre kutusuna geçerli bir veri girilir
+10.Şifre tekrarı kutusuna geçerli bir veri girilir
+11.Kayıt Ol butonuna tıklanır","
+
+
+harry@gmail.com
+",uyarı mesajı alınmalıdır,"backend bekleniyor
+kayıtlı kullanıcının tutuldugu bir database yok",QA - GÖRKEM,29.05.2024,29.05.2024,,,Blocked,,
+NEGATIVE,TC-005,"Registration Page
+
+
+
+
+
+
+
+
+",Registiration Tests- şifre tekrarı-geçersiz veri girişi,Critical,Şifre tekrarı kısmındaki uyuşmazlıktan dolayı kayıdın gerçekleşmediği doğrulanır,"Web sitesi erişilebilir olmalı
+
+
+
+
+
+
+
+
+",,"1	Web sitesine gidilir
+2	İsim Kutusuna geçerli bir veri girilir
+3	Soyisim Kutusuna geçerli bir veri girilir
+4	Cinsiyet Dropdownından seçim yapılır
+5	Doğum Tarihi kutusuna geçerli bir veri girilir
+6	Devam butonuna tıklanır
+7	Email kutusuna geçerli bir veri girilir
+8	Kullanıcı adı kutusuna geçerli bir veri girilir
+9	Şifre kutusuna geçerli bir veri girilir
+10	Şifre tekrarı kutusuna geçersiz bir veri girilir
+11	Kayıt Ol butonuna tıklanır","HarryP1.
+HarryP12",uyarı mesajı alınmalıdır,"Şifreler Uyuşmadığında ""Şifreler eşleşmiyor."" Uyarı mesajı yayınlanıyor, uyarı maksatlı 1. ve 2. 
+barlar kırmızıya dönüyor",QA - GÖRKEM,29.05.2024,29.05.2024,,,Passed,,
+NEGATIVE,TC-006,"Registration Page
+
+
+
+
+
+
+
+
+
+",Registiration Tests-şifre kutusu gecersiz veri girişi,High,Şifre tekrarı kısmındaki uyuşmazlıktan dolayı kayıdın gerçekleşmediği doğrulanır,"Web sitesi erişilebilir olmalı
+
+
+
+
+
+
+
+
+",,"1        Web sitesine gidilir/ Kayıt ol ekranına tıklanır
+2        İsim Kutusuna geçerli bir veri girilir
+3        Soyisim Kutusuna geçerli bir veri girilir
+4        Cinsiyet Dropdownından seçim yapılır
+5        Doğum Tarihi kutusuna geçerli bir veri girilir
+6        Devam butonuna tıklanır
+7        Email kutusuna geçerli bir veri girilir
+8        Kullanıcı adı kutusuna geçerli bir veri girilir
+9        Şifre kutusuna geçersiz  bir veri girilir
+10        Şifre tekrarı kutusuna geçerli bir veri girilir
+11        Kayıt Ol butonuna tıklanır","HarryP12
+HarryP1.",uyarı mesajı alınmalıdır,"Şifreler uyuşmadığında ""Şifreler eşleşmiyor."" Uyarı mesajı yayınlanıyor fakat, 1. şifre alanını
+uyarıcı bir indikatör yayınlıyor ( kırmızı alan)
+",QA - GÖRKEM,29.05.2024,29.05.2024,,,Passed,,
+NEGATIVE,TC-007,"Registration Page
+
+
+
+
+
+
+
+
+",Registiration Tests-şifre kutusunu boş bırakma  ,Medium,Veri girilmeyen şifre kutusu dolayısıyla kaydın gerçekleşmediği doğrulanır,"Web sitesi erişilebilir olmalı
+
+
+
+
+
+
+
+
+",,"1        Web sitesine gidilir/Kayıt ol ekranına tıklanır
+2        İsim Kutusuna geçerli bir veri girilir
+3        Soyisim Kutusuna geçerli bir veri girilir
+4        Cinsiyet Dropdownından seçim yapılır
+5        Doğum Tarihi kutusuna geçerli bir veri girilir
+6        Devam butonuna tıklanır
+7        Email kutusuna geçerli bir veri girilir
+8        Kullanıcı adı kutusuna geçerli bir veri girilir
+9        Şifre kutusu boş bırakılır
+10        Şifre tekrarı kutusuna geçerli bir veri girilir
+11        Kayıt Ol butonuna tıklanır","
+Ron
+Red
+Erkek
+01/01/2000
+
+ron@gmail.com
+Ronald
+
+HarryP1.
+",uyarı mesajı görüntülenmelidir,Şifre gereklidir mesajı yayınlanıyor,QA - GÖRKEM,29.05.2024,29.05.2024,,,Passed,,
+NEGATIVE,TC-008,"Registration Page
+
+
+
+
+
+
+
+
+",Registiration Tests-şifre kutusu boş bırakılır- şifre tekrarı kutusu boş bırakılır,Low,Veri girilmeyen şifre kutusu ve şifre tekrarı kutusundan  dolayı kaydın gerçekleşmediği doğrulanır,"Web sitesi erişilebilir olmalı
+
+
+
+
+
+
+
+
+",,"1        Web sitesine gidilir/Kayıt ol ekranına tıklanır
+2        İsim Kutusuna geçerli bir veri girilir
+3        Soyisim Kutusuna geçerli bir veri girilir
+4        Cinsiyet Dropdownından seçim yapılır
+5        Doğum Tarihi kutusuna geçerli bir veri girilir
+6        Devam butonuna tıklanır
+7        Email kutusuna geçerli bir veri girilir
+8        Kullanıcı adı kutusuna geçerli bir veri girilir
+9        Şifre kutusu boş bırakılır  
+10        Şifre tekrarı kutusu boş bırakılır
+11        Kayıt Ol butonuna tıklanır","
+Ron
+Red
+Erkek
+01/01/2000
+
+ron@gmail.com
+Ronald
+
+
+",uyarı mesajı görüntülenmelidir,Her iki alan için de Şifre gereklidir mesajı yayınlanıyor.,QA - GÖRKEM,29.05.2024,29.05.2024,,,Passed,,
+NEGATIVE,TC-009,"Registration Page
+
+
+
+
+
+
+
+
+",Registiration Tests-şifrenin yıldızlı görünmesi,Low,Şifrenin Yıldız Şeklinde Görüntülendiği doğrulanır,"Web sitesi erişilebilir olmalı
+
+
+
+
+
+
+
+
+",,"1        Web sitesine gidilir/Kayıt ol ekranına tıklanır
+2        İsim Kutusuna geçerli bir veri girilir
+3        Soyisim Kutusuna geçerli bir veri girilir
+4        Cinsiyet Dropdownından seçim yapılır
+5        Doğum Tarihi kutusuna geçerli bir veri girilir
+6        Devam butonuna tıklanır
+7        Email kutusuna geçerli bir veri girilir
+8        Kullanıcı adı kutusuna geçerli bir veri girilir
+9        Şifre kutusuna geçerli bir veri girilir  
+10        Şifre tekrarı kutusuna geçerli bir verilir","
+Ron
+Red
+Erkek
+01/01/2000
+
+ron@gmail.com
+Ronald1.
+Ronald1.",Şifre girildiğinde input yıldız şekline görüntülenmeli,Şifre yıldızlı bir şekilde görünüyor ancak; 2 adet gizleme butonu var,QA - GÖRKEM,29.05.2024,31.05.2024,https://trello.com/c/8anwOq4E,,Passed,gönderildi 1,
+NEGATIVE,TC-010,"Registration Page
+
+
+
+
+
+
+
+
+",Kullanıcı geçersiz verilerle uygulamaya kaydolamamalı(isim kutusu boş),High,Kullanıcının isim kutusunu boş bıraktığında  uygulamaya kaydolamadığı doğrulanır,Web sitesi erişilebilir olmalı,,"1        Web sitesine gidilir/Kayıt ol ekranına tıklanır
+2        İsim Kutusu boş bırakılır
+3        Soyisim Kutusuna geçerli bir veri girilir
+4        Cinsiyet Dropdownından seçim yapılır
+5        Doğum Tarihi kutusuna geçerli bir veri girilir
+6        Devam butonuna tıklanır
+7        Uyarı mesajının görüntülendiği doğrulanır","""
+                                                
+Red
+Erkek
+01/01/2000
+
+ron@gmail.com
+Ronald1.
+Ronald1.""","Şifre alanına girilen karakterler, kullanıcı tarafından girildiği sırada kısa bir süre görünüp ardından yıldız (*) veya nokta (•) sembolü ile gizlenmelidir","""isim gereklidir"" mesajı yayınlanıyor",QA - GÖRKEM,29.05.2024,29.05.2024,,,Passed,,
+NEGATIVE,TC-011,"Registration Page
+
+
+
+
+
+
+
+
+",Registiration Tests- soyisim kutusu boş,High,Kullanıcının soyisim kutusunu boş bıraktığında  uygulamaya kaydolamadığı doğrulanır,Web sitesi erişilebilir olmalı,,"1        Web sitesine gidilir/Kayıt ol ekranına tıklanır
+2        İsim Kutusuna geçerli bir veri girilir
+3        Soyisim Kutusu boş bırakılır
+4        Cinsiyet Dropdownından seçim yapılır
+5        Doğum Tarihi kutusuna geçerli bir veri girilir
+6        Devam butonuna tıklanır
+7        Uyarı mesajının görüntülendiği doğrularır","
+Ron
+-
+Erkek
+01/01/2000
+
+ron@gmail.com
+Ronald1.
+Ronald1.",uyarı mesajı görüntülenmelidir,"""soyisim gereklidir"" mesajı yayınlanıyor",QA - GÖRKEM,29.05.2024,29.05.2024,,,Passed,,
+NEGATIVE,TC-012,"Registration Page
+
+
+
+
+
+
+
+
+",Registiration Tests- cinsiyet kutusu boş,High,Kullanıcının cinsiyet kutusunu boş bıraktığında  uygulamaya kaydolamadığı doğrulanır,Web sitesi erişilebilir olmalı,,"1        Web sitesine gidilir/Kayıt ol ekranına tıklanır
+2        İsim Kutusuna geçerli bir veri girilir
+3        Soyisim Kutusuna geçerli bir veri girilir
+4        Cinsiyet Dropdownu boş bırakılır
+5         Doğum Tarihi kutusuna geçerli bir veri girilir
+6        Devam butonuna tıklanır
+7        Uyarı mesajının görüntülendiği doğrularır","
+Ron
+Red
+--
+01/01/2000
+
+ron@gmail.com
+Ronald1.
+Ronald1.",uyarı mesajı görüntülenmelidir,"""Cinsiyet seçimi gereklidir"" uyarı mesajı yayınlanıyor",QA - GÖRKEM,29.05.2024,29.05.2024,,,Passed,,
+NEGATIVE,TC-013,"Registration Page
+
+
+
+
+
+
+
+
+",Registiration Tests- doğum tarihi kutusu boş,High,Kullanıcının doğum tarihi kutusunu boş bıraktığında  uygulamaya kaydolamadığı doğrulanır,Web sitesi erişilebilir olmalı,,"1        Web sitesine gidilir/Kayıt ol ekranına tıklanır
+2        İsim Kutusuna geçerli bir veri girilir
+3        Soyisim Kutusuna geçerli bir veri girilir
+4        Cinsiyet Dropdownından seçim yapılır
+5        Doğum Tarihi kutusu boş bırakılır
+6        Devam butonuna tıklanır
+7        Uyarı mesajının görüntülendiği doğrularır","
+Ron
+Red
+Erkek
+
+
+ron@gmail.com
+Ronald1.
+Ronald1.",uyarı mesajı görüntülenmelidir,"""Doğum tarihi gereklidir"" uyarı mesajı yayınlanıyor",QA - GÖRKEM,29.05.2024,29.05.2024,,,Passed,,
+NEGATIVE,TC-014,"Registration Page
+
+
+
+
+
+
+
+
+",Registiration -doğum tarihi kutusu geçersiz tarih girişi,Medium,Kullanıcının doğum tarihi bilgisine geçersiz veriler girdiğinde uygulamaya kaydolamadığı doğrulanır  (100 yıl öncesi - 5 yıl sonrası gibi),Web sitesi erişilebilir olmalı,,"1        Web sitesine gidilir/Kayıt ol ekranına tıklanır
+2        İsim Kutusuna geçerli bir veri girilir
+3        Soyisim Kutusuna geçerli bir veri girilir
+4        Cinsiyet Dropdownından seçim yapılır
+5        Doğum Tarihi kutusuna geçersiz bir veri girilir Ok butonuna tıklanır
+6        Devam butonuna tıklanır
+7        Uyarı mesajının görüntülendiği doğrularır","
+Ron
+Red
+Erkek
+
+29/10/1923  -- 29/10/2050
+ron@gmail.com
+Ronald1.
+Ronald1.",uyarı mesajı görüntülenmelidir,"Doğum tarihi seçiminde bir sınır yok. örn. 1111 ve 9999 seçilebiliyor.
+ayrıca ""yyyy"" formatı 4 digit olması gerekirken 6 digit alıyor.",QA - GÖRKEM,30.05.2024,31.05.2024,1- https://trello.com/c/1IK6Lk1Y     2- https://trello.com/c/Iw2oePVw,,Failed,4 digit düzeltildi mi,4 digit düzeltildi ancak geçersiz veri girince kabul ediyor 31.05 yeniden gönderildi 
+POSITIVE,TC-015,"Registration Page
+
+
+
+
+
+
+
+
+",Registiration - isim kutusu çarpı ikonunun işlevselliği,Medium,İsim Kutusuna girilen inputun çarpı elementine tıklanarak  silinebildiği doğrulanır,Web sitesi erişilebilir olmalı,,"1        Web sitesine gidilir/Kayıt ol ekranına tıklanır
+2        İsim Kutusuna geçerli bir veri girilir
+3        İsim Kutusundaki çarpı ikonuna tıklanır
+4        İsim kutusunun boş olduğu doğrulanır",Ron,isim kutusu temizlenmeli,isim kutusu çalışıyor,QA - GÖRKEM,29.05.2024,29.05.2024,,,Passed,,
+POSITIVE,TC-016,"Registration Page
+
+
+
+
+
+
+
+
+",Registiration - soyisim kutusu çarpı ikonunun işlevselliği,Low,Soyİsim Kutusuna girilen inputun çarpı elementine tıklanarak  silinebildiği doğrulanır,Web sitesi erişilebilir olmalı,,"1        Web sitesine gidilir/Kayıt ol ekranına tıklanır
+2        Soyisim Kutusuna geçerli bir veri girilir
+3        Soysim Kutusundaki çarpı ikonuna tıklanır
+4        Soyisim kutusunun boş olduğu doğrulanır",Red,soyisim kutusu temizlenmeli,soyisim kutusu temizleniyor,QA - GÖRKEM,29.05.2024,29.05.2024,,,Passed,,
+POSITIVE,TC-017,"Registration Page
+
+
+
+
+
+
+
+
+",Registiration - girilen tarihi cancel butonu  ile iptal etme,Low,Doğum tarihi Kutusuna girilen inputun cancel elementine tıklanarak silinebildiği doğrulanır,Web sitesi erişilebilir olmalı,,"1        Web sitesine gidilir/Kayıt ol ekranına tıklanır
+2        Doğum tarihi kutusuna gecerli bir veri girilir
+3        Cancel butonuna tıklanır
+4        Takvimin ekranının kapandığı doğrulanır",01.01.2000,takvim ekranı kapanmalı,cancel butonu yok.,QA - GÖRKEM,29.05.2024,29.05.2024,,,Failed,gönderildi,
+POSITIVE,TC-018,"Registration Page
+
+
+
+
+
+
+
+
+",Registiration - girilen tarihi clear butonuyla temizleme,Low,"Doğum tarihi Kutusuna girilen inputun clear elementine tıklanarak silinebildiği ve  takvimin default hale geldiği doğrulanır
+
+",Web sitesi erişilebilir olmalı,,"1        Web sitesine gidilir/ Kayıt ol butonuna tıklanır
+2        Doğum tarihi kutusuna gecerli bir veri girilir
+3        Clear butonuna tıklanır
+4        Takvimin ekranının default hale geldiği doğrulanır",01.01.2000,takvim ekranı default konuma gelmeli,clear butonu çalışıyor ve tarihi temizliyor,QA - GÖRKEM,29.05.2024,29.05.2024,,,Passed,,
+NEGATIVE,TC-019,"Registration Page
+
+
+
+
+
+
+
+
+",Registration -6 karakterli şifre ile kayıt olma,High,6 karakterli şifre ile  uygulamaya kayıt olunamadığı doğrulanır,,,"1        Web sitesine gidilir/ Kayıtol butonuna tıklanır
+2        İsim Kutusuna geçerli bir veri girilir
+3        Soyisim Kutusuna geçerli bir veri girilir
+4        Cinsiyet Dropdownından seçim yapılır
+5        Doğum Tarihi kutusuna geçerli bir veri girilir
+6        Devam butonuna tıklanır
+7        Email kutusuna geçerli bir veri girilir
+8        Kullanıcı adı kutusuna geçerli bir veri girilir
+9        Şifre kutusuna geçersiz bir veri girilir (6 karakter)
+10        Şifre tekrarı kutusuna aynı veri girilir
+11        Kayıt Ol butonuna tıklanır
+12        Uyarı mesajının görüntülendiği doğrulanır","""
+Ron
+Red
+Erkek
+01/01/2000
+
+ron@gmail.com
+Ronald
+
+HarP1.
+""",uyarı mesajı görüntülenmelidir,7 karakterden az veri girildiğinde uyarı mesajı veriliyor,QA - GÖRKEM,29.05.2024,29.05.2024,,,Passed,,
+NEGATIVE,TC-020,"Registration Page
+
+
+
+
+
+
+
+
+",Registration- Büyük harf içermeyen şifre ile kaydolma,High,Büyük harf içermeyen şifre ile kaydolunamadığı doğrulanır,,,"1	Web sitesine gidilir/Kayıtol butonuna tıklanır
+2	İsim Kutusuna geçerli bir veri girilir
+3	Soyisim Kutusuna geçerli bir veri girilir
+4	Cinsiyet Dropdownından seçim yapılır
+5	Doğum Tarihi kutusuna geçerli bir veri girilir
+6	Devam butonuna tıklanır
+7	Email kutusuna geçerli bir veri girilir
+8	Kullanıcı adı kutusuna geçerli bir veri girilir
+9	Şifre kutusuna geçersiz bir veri girilir (Büyük harf girilmez)
+10	Şifre tekrarı kutusuna aynı veri girilir
+11	Kayıt Ol butonuna tıklanır
+12	Uyarı mesajının görüntülendiği doğrulanır","Ron
+Red
+Erkek
+01/01/2000
+
+ron@gmail.com
+Ronald
+harryp1.",uyarı mesajı görüntülenmelidir,Uyarı mesajı görüntüleniyor,QA - GÖRKEM,29.05.2024,29.05.2024,,,Passed,,
+NEGATIVE,TC-021,"Registration Page
+
+
+
+
+
+
+
+
+",Registration - küçük harf içermeyen şifre,High,Küçük harf içermeyen şifre ile kaydolunamadığı doğrulanır,,,"1        Web sitesine gidilir/ Kayıt ol butonuna tıklanır
+2        İsim Kutusuna geçerli bir veri girilir
+3        Soyisim Kutusuna geçerli bir veri girilir
+4        Cinsiyet Dropdownından seçim yapılır
+5        Doğum Tarihi kutusuna geçerli bir veri girilir
+6        Devam butonuna tıklanır
+7        Email kutusuna geçerli bir veri girilir
+8        Kullanıcı adı kutusuna geçerli bir veri girilir
+9        Şifre kutusuna geçersiz bir veri girilir (küçük harf girilmez)
+10        Şifre tekrarı kutusuna aynı veri girilir
+11        Kayıt Ol butonuna tıklanır
+12        Uyarı mesajının görüntülendiği doğrulanır","Ron
+Red
+Erkek
+01/01/2000
+
+ron@gmail.com
+Ronald
+HARRYP1.",uyarı mesajı görüntülenmelidir,Uyarı mesajı görüntüleniyor,QA - GÖRKEM,29.05.2024,29.05.2024,,,Passed,,
+NEGATIVE,TC-022,Registration Page,Registration- sadece özel karakterlerden oluşan şifre,High,Kullanıcı geçersiz verilerle uygulamaya kaydolamadığını doğrulamak(şifre),,,"1	Web sitesine gidilir
+2	İsim Kutusuna geçerli bir veri girilir
+3	Soyisim Kutusuna geçerli bir veri girilir
+4	Cinsiyet Dropdownından seçim yapılır
+5	Doğum Tarihi kutusuna geçerli bir veri girilir
+6	Devam butonuna tıklanır
+7	Email kutusuna geçerli bir veri girilir
+8	Kullanıcı adı kutusuna geçerli bir veri girilir
+9	Şifre kutusuna geçersiz bir veri girilir (hepsi özel karakter)
+10	Şifre tekrarı kutusuna aynı veri girilir
+11	Kayıt Ol butonuna tıklanır
+12	Uyarı mesajının görüntülendiği doğrulanır","
+Harry
+Potter
+Erkek
+01/01/2000
+
+harry@gmail.com
+Harry
+-------
+-------
+",uyarı mesajı görüntülenmelidir,Uyarı mesajı görüntüleniyor,QA - GÖRKEM,29.05.2024,29.05.2024,,,Passed,,
+NEGATIVE,TC-023,Registration Page,Registration- sadece rakamlardan oluşan şifre,High,Kullanıcı geçersiz verilerle uygulamaya kaydolamadığını doğrulamak(şifre),,,"1	Web sitesine gidilir
+2	İsim Kutusuna geçerli bir veri girilir
+3	Soyisim Kutusuna geçerli bir veri girilir
+4	Cinsiyet Dropdownından seçim yapılır
+5	Doğum Tarihi kutusuna geçerli bir veri girilir
+6	Devam butonuna tıklanır
+7	Email kutusuna geçerli bir veri girilir
+8	Kullanıcı adı kutusuna geçerli bir veri girilir
+9	Şifre kutusuna geçersiz bir veri girilir (hepsi rakam)
+10	Şifre tekrarı kutusuna aynı veri girilir
+11	Kayıt Ol butonuna tıklanır
+12	Uyarı mesajının görüntülendiği doğrulanır","
+Harry
+Potter
+Erkek
+01/01/2000
+
+harry@gmail.com
+Harry
+1111111
+1111111
+",uyarı mesajı görüntülenmelidir,uYARI MESAJI GÖRÜNTÜLENİYOR,QA - GÖRKEM,29.05.2024,29.05.2024,,,Passed,,
+NEGATIVE,TC-024,Registration Page,Registration Tests-isim kutusuna 3 karakterden az veri girme,Medium,"Kullanıcı geçersiz verilerle uygulamaya kaydolamadığını doğrulamak
+(isim 3 karakterden az)",,,"1	Web sitesine gidilir
+2	İsim Kutusuna geçersiz bir veri girilir
+3	Soyisim Kutusuna geçerli bir veri girilir
+4	Cinsiyet Dropdownından seçim yapılır
+5	Doğum Tarihi kutusuna geçerli bir veri girilir
+6	Devam butonuna tıklanır
+7	Uyarı mesajının görüntülendiği doğrulanır","
+Ha
+Potter
+Erkek
+01/01/2000
+",uyarı mesajı görüntülenmelidir,3 karakterden az isim kabul ediyor (etmemeli),QA - GÖRKEM,29.05.2024,29.05.2024,,,Failed,gönderildi,
+NEGATIVE,TC-025,Registration Page,Registration-isim kutusuna 50 karakterden fazla veri girme,Medium,Kullanıcı geçersiz verilerle uygulamaya kaydolamamadığını doğrulamak(isim 50 karakterden fazla),,,"1	Web sitesine gidilir
+2	İsim Kutusuna geçersiz bir veri girilir
+3	Soyisim Kutusuna geçerli bir veri girilir
+4	Cinsiyet Dropdownından seçim yapılır
+5	Doğum Tarihi kutusuna geçerli bir veri girilir
+6	Devam butonuna tıklanır
+7	Uyarı mesajının görüntülendiği doğrulanır","
+Hahahahahahahahahahahahahahahahahahahahahahahahahaha
+Potter
+Erkek
+01/01/2000
+",uyarı mesajı görüntülenmelidir,50 karakterden fazla isim kabul ediyor (etmemeli),QA - GÖRKEM,29.05.2024,29.05.2024,,,Failed,gönderildi 1,
+NEGATIVE,TC-026,Registration Page,Registration-isim kutusunu boşluk girme,High,Kullanıcı geçersiz verilerle uygulamaya kaydolamamalı(isim null),,,"1	Web sitesine gidilir
+2	İsim Kutusuna geçersiz bir veri girilir
+3	Soyisim Kutusuna geçerli bir veri girilir
+4	Cinsiyet Dropdownından seçim yapılır
+5	Doğum Tarihi kutusuna geçerli bir veri girilir
+6	Devam butonuna tıklanır
+7	Uyarı mesajının görüntülendiği doğrulanır","
+7 karakter boşluk tuşuna basılır
+Potter
+Erkek
+01/01/2000
+",uyarı mesajı görüntülenmelidir,"""isim gereklidir"" uyarı mesajı görüntüleniyor",QA - GÖRKEM,29.05.2024,29.05.2024,,,Passed,,
+NEGATIVE,TC-027,Registration Page,Registration -mail kutusunu boş bırakma,High,Kullanıcı geçersiz verilerle uygulamaya kaydolamadığını doğrulamak(email formati),,,"1	Web sitesine gidilir
+2	İsim Kutusuna geçerli bir veri girilir
+3	Soyisim Kutusuna geçerli bir veri girilir
+4	Cinsiyet Dropdownından seçim yapılır
+5	Doğum Tarihi kutusuna geçerli bir veri girilir
+6	Devam butonuna tıklanır
+7	Email kutusu boş bırakılır
+8	Kullanıcı adı kutusuna geçerli bir veri girilir
+9	Şifre kutusuna geçerli bir veri girilir 
+10	Şifre tekrarı kutusuna aynı veri girilir
+11	Kayıt Ol butonuna tıklanır
+12	Uyarı mesajının görüntülendiği doğrulanır","
+Harry
+Potter
+Erkek
+01/01/2000
+
+
+
+
+
+",uyarı mesajı görüntülenmelidir,"""Email gereklidir"" uyarı mesajı yayınlanıyor",QA - GÖRKEM,29.05.2024,29.05.2024,,,Passed,,
+POSITIVE,TC-028,Registration Page,Registration -mail kutusuna geçersiz veriler girme,High,Kullanıcı geçersiz verilerle uygulamaya kaydolamadığını doğrulamak(email formati),,,"1	Web sitesine gidilir
+2	İsim Kutusuna geçerli bir veri girilir
+3	Soyisim Kutusuna geçerli bir veri girilir
+4	Cinsiyet Dropdownından seçim yapılır
+5	Doğum Tarihi kutusuna geçerli bir veri girilir
+6	Devam butonuna tıklanır
+7	Email kutusuna geçersiz bir veri girilir
+8	Kullanıcı adı kutusuna geçerli bir veri girilir
+9	Şifre kutusuna geçerli bir veri girilir 
+10	Şifre tekrarı kutusuna aynı veri girilir
+11	Kayıt Ol butonuna tıklanır
+12	Uyarı mesajının görüntülendiği doğrulanır","
+Harry
+Potter
+Erkek
+01/01/2000
+
+harry@com/ harry@.com/ harry.com / harry @gmail.com/  harry@ gmail.com  /türkçekarakter@gmail.com  /  **@gmail.com
+
+
+
+",uyarı mesajı görüntülenmelidir,"geçersiz mail formatını da kabul ediyor. 
+format isim@gmail.com tarzında olmalı",QA - GÖRKEM,30.05.2024,.05.2024,,,Failed,gönderildi 1,
+POSITIVE,TC-029,Login Page,Login Tests- kayıtlı kullanıcı girişi,High,Kayıtlı kullanıcı kayıtlı verileriyle verilerle uygulamaya giriş yapabildiğini doğrulamak,,,"1	Web sitesine gidilir
+2	""Zaten bir hesabın var mı? Giriş yap"" web elementinin görüntülendiği doğrulanır
+3	Giriş yap linktextine tıklanır
+4	""Hesap bilgilerini giriniz web elementinin görüntülendiği doğrulanır.
+5	Kullanıcı adı kutusuna kayıtlı kullanıcı adı girilir
+6	Şifre kutusuna kayıtlı şifre bilgisi girilir
+7	Giriş yap butonuna tıklanır
+8	Giriş işleminin başarılı olduğu doğrulanır",Harry                    HarryP1.,Giriş işlemi başarıyla gerçekleşmelidir,,QA - GÖRKEM,29.05.2024,29.05.2024,,,Blocked,,
+NEGATIVE,TC-030,Login Page,Login test- Geçersiz kullanıcı adı -geçerli şifre ile giriş,High,"geçersiz kullanıcı adı, geçerli şifre ile login olamamayı doğrulamak",,,"1	Web sitesine gidilir
+3	Giriş yap linktextine tıklanır
+4	Kullanıcı adı kutusuna geçersiz kullanıcı adı girilir
+5	Şifre kutusuna kayıtlı şifre bilgisi girilir
+6	Giriş yap butonuna tıklanır
+7	Uyarı mesajının görüntülendiği doğrulanır",harry12@gmail.com                    HarryP1.,uyarı mesajı görüntülenmelidir,,QA - GÖRKEM,29.05.2024,29.05.2024,,,Passed,,
+NEGATIVE,TC-031,Login Page,Login test- Geçerli kullanıcı adı -geçersiz şifre ile giriş,Critical,Kullanıcının Geçerli kullanıcı adı geçersiz şifre ile giriş yapılamadığını  doğrulamak,"1. Web App e gidilmiş 
+2. Login işlemi yapılmış olmalı
+3. Bugün ekranına girilmiş olmalı",,"1        Web sitesine gidilir
+3        Giriş yap linktextine tıklanır
+4        Kullanıcı adı kutusuna geçerli kullanıcı adı girilir
+5        Şifre kutusuna  geçerlsiz şifre bilgisi girilir
+6        Giriş yap butonuna tıklanır
+7        Uyarı mesajının görüntülendiği doğrulanır",HarryP12.,uyarı mesajı görüntülenmelidir,,QA - GÖRKEM,29.05.2024,29.05.2024,,,Passed,,
+NEGATIVE,TC-032,Login Page,Login test- Boş kullanıcı adı -geçerli şifre ile giriş,Critical,Kullanıcının boş kullanıcı adı ve geçerli şifre ile login olamadığını  doğrulamak,"1. Web App e gidilmiş 
+2. Login Ekranına gidilmiş olmalı",,"1        Web sitesine gidilir
+3        Giriş yap linktextine tıklanır
+4        Kullanıcı adı kutusuboş bırakılır
+5        Şifre kutusu boş bırakılır
+6        Giriş yap butonuna tıklanır
+7        Uyarı mesajının görüntülendiği doğrulanır",HarryP1.,uyarı mesajı görüntülenmelidir,,QA - GÖRKEM,29.05.2024,29.05.2024,,,Passed,,
+NEGATIVE,TC-033,Login Page,Login test- kayıtlı kullanıcı adı -boş şifre ,Critical,Kullanıcının kayıtlı kullanıcı adı  ve boş şifre ile login olamadığını  doğrulamak,"1. Web App e gidilmiş 
+2. Login Ekranına gidilmiş olmalı",,"1	Kullanıcı adı kutusuna kayıtlı kullanıcı adı girilir
+2	Şifre kutusu boş bırakılır
+3	Giriş yap butonuna tıklanır
+4	Uyarı mesajının görüntülendiği doğrulanır",Harry,uyarı mesajı görüntülenmelidir,,,29.05.2024,29.05.2024,,,,,
+NEGATIVE,TC-034,Login Page,Login test- kullanıcı adı kutusuna sql saldırısı denemesi,Critical,kullanıcı adı alanına sql injection denemesi yaparak login olunamadığını  doğrulamak,"1. Web App e gidilmiş 
+2. Login işlemi yapılmış olmalı
+",,"1        Web sitesine gidilir
+3        Giriş yap linktextine tıklanır
+4        Kullanıcı adı kutusuna sql injection girilr
+5        Şifre kutusuna geçerli bir veri girilir
+6        Giriş yap butonuna tıklanır
+7        Uyarı mesajının görüntülendiği doğrulanır",; DROP TABLE users;--,uyarı mesajı görüntülenmelidir,,QA - GÖRKEM,29.05.2024,29.05.2024,,,Blocked,,
+NEGATIVE,TC-035,Login Page,Login test- şifre kutusuna sql saldırısı denemesi,Critical,şifre alanına sql injection denemesi yaparak login olunamadığını  doğrulamak,"1. Web App e gidilmiş 
+2. Login işlemi yapılmış olmalı
+",,"1        Web sitesine gidilir
+3        Giriş yap linktextine tıklanır
+4        Kullanıcı adı kutusuna kayıtlı kullanıcı adı girilir
+5        Şifre kutusuna sql injection girilr
+6        Giriş yap butonuna tıklanır
+7        Uyarı mesajının görüntülendiği doğrulanır",; DROP TABLE users;--,uyarı mesajı görüntülenmelidir,,QA - GÖRKEM,29.05.2024,29.05.2024,,,Blocked,,
+NEGATIVE,TC-036,Login Page,Login test- hem kullanıcı adı hem şifre kutusuna sql saldırısı denemesi,Critical,Login test- hem kullanıcı adı hem şifre kutusuna sql injection denemesi yaparak login olunamadığını  doğrulamak,"1. Web App e gidilmiş 
+2. Login işlemi yapılmış olmalı
+",,"1        Web sitesine gidilir
+3        Giriş yap linktextine tıklanır
+4        Kullanıcı adı kutusuna sql injection girilr
+5        Şifre kutusuna sql injection girilr
+6        Giriş yap butonuna tıklanır
+7        Uyarı mesajının görüntülendiği doğrulanır",; DROP TABLE users;--,uyarı mesajı görüntülenmelidir,,QA - GÖRKEM,29.05.2024,29.05.2024,,,Blocked,,
+POSITIVE,TC-037,Galeri ekranı,Galeri ekranı web elementlerinin görüntülenmesi ,High,"Ekrandaki elementlerin görünürlüğünü ve etkileşime 
+geçilebilrliğini doğrulamak","1. Web App e gidilmiş 
+2. Login işlemi yapılmış olmalı
+3. Galeri ekranına girilmiş olmalı",,"1	Day story logolarının varlığı görüntülenir
+2	Bugün elementine tıklandığında bugün sayfası görüntülenir
+3	Mobil uygulama indir web elementi, google play ve ios web elementi görüntülenir 
+4	telefon numarası ve mail adresi görüntülenmeli
+5	Profil ikonu görüntülenmeli",,"Ekrandaki elementler görüntülenebilmeli ve linktexler etkileşime 
+geçilebilmelidir",,QA - GÖRKEM,29.05.2024,29.05.2024,,,Blocked,,
+POSITIVE,TC-038,Bugün Ekranı,Bugün ekranında güncel tarihin görüntülenmesi,Medium,Tarihin güncel olup olmadığının doğrulamak,"1. Web App e gidilmiş 
+2. Login işlemi yapılmış olmalı
+3. Bugün ekranına girilmiş olmalı",,"1	Bugün elementine tıklanır
+2	Tarih bilgisinin güncel olup olmadığı doğrulanır.",,Tarih bilgisi tıklanılan günle aynı olmalıdır ,güncel gün gösteriliyor,QA - GÖRKEM,29.05.2024,29.05.2024,,,Passed,,
+POSITIVE,TC-039,Bugün Ekranı,geçerli verilerle gün özeti oluşturma ,High,Ekrandaki elementlerin görünürlüğünü ve etkileşime geçilebilrliğini doğrulamak,"1. Web App e gidilmiş 
+2. Login işlemi yapılmış olmalı
+3. Bugün ekranına girilmiş olmalı",,"1	Kullanıcı bugün elementine tıklar
+2	Başlık kutusuna geçerli bir veri girilir
+3	Not detayları kutusuna geçerli bir veri girilir
+4	Kaydet butonua tıklanır
+5	AI günün özetini oluştur butonuna tıklanır
+6	Uyarı mesajı görüntülenir 
+7	Devam et butonuna tıklanır
+8	Çıktı sayfası görüntülenir 
+9	resim ve notların görüntülendiği doğrulanır
+10	Çıktı sayfası görüntülenir ",,Çıktı sayfası görüntülenmelidir,çıktı sayfası görüntüleniyor,QA - GÖRKEM,29.05.2024,29.05.2024,,,Passed,,
+NEGATIVE,TC-040,Bugün Ekranı,Gün özetini oluşturmaktan vazgeçebilmeyi test etme,Medium,vazgeç butonunun çalıştığını doğrulamak,"1. Web App e gidilmiş 
+2. Login işlemi yapılmış olmalı
+3. Bugün ekranına girilmiş olmalı",,"1	Kullanıcı bugün elementine tıklar
+2	Başlık kutusuna geçerli bir veri girilir
+3	Not detayları kutusuna geçerli bir veri girilir
+4	Kaydet butonua tıklanır
+5	AI günün özetini oluştur butonuna tıklanır
+6	Uyarı mesajı görüntülenir 
+7	vazgeç  butonuna tıklanır
+8	uyarı kaybolur","
+Öğle Yemeği ve Sinema Hazırlıkları
+Öğleye doğru arkadaşlarımla buluşmak için dışarı çıktım. Beraber güzel bir kafede hafif bir öğle yemeği yedik ve film hakkında konuşarak heyecanımızı paylaştık. Yemekten sonra sinemaya gitmek için evime döndüm ve biraz dinlendim. Daha sonra sinema için hazırlanıp evden çıktım.
+
+
+",Kullanıcı günün özetini oluşturmaktan vazgeçebilmeli,,QA - GÖRKEM,29.05.2024,29.05.2024,,,Blocked,,
+POSITIVE,TC-041,Bugün Ekranı,not detayı kutusunu boş bırakma,Medium,Not detayını boş bırakarak günün özetini oluşturulmadığını doğrulamak,"1. Web App e gidilmiş 
+2. Login işlemi yapılmış olmalı
+3. Bugün ekranına girilmiş olmalı",,"1	Kullanıcı bugün elementine tıklar
+2	Başlık kutusuna geçerli br veri girilir
+3	Not detayları kutu boş bırakılır
+4	Kaydet butonuna tıklanır
+5	Uyarı mesajı görüntülenir ",Film Deneyimi,uyarı mesajı görüntülenebilmeli,,QA - GÖRKEM,29.05.2024,29.05.2024,,,Blocked,,
+NEGATIVE,TC-042,Bugün Ekranı,Başlık kutusunu boş bırakma,Low,Başlık kutusu boş bırakılarak günün özeti oluşturulmadığını doğrulamak ,"1. Web App e gidilmiş 
+2. Login işlemi yapılmış olmalı
+3. Bugün ekranına girilmiş olmalı",,"1	Kullanıcı bugün elementine tıklar
+2	Başlık kutusu boş bırakılır
+3	Not detayları kutusuna geçerli bir veri girilir
+4	Kaydet butonuna tıklanır
+5	Uyarı mesajı görüntülenir ",Sinemaya gitmek için toplu taşıma araçlarını kullandım. Sinema salonuna vardığımda biletimi aldım ve film başlamadan önce biraz patlamış mısır ve içecek aldım. Salona girip yerimi buldum ve film başlamadan önce birkaç fragman izledim,uyarı mesajı görüntülenebilmeli,,QA - GÖRKEM,29.05.2024,29.05.2024,,,Blocked,,
+NEGATIVE,TC-043,Bugün Ekranı,not detayı kutusuna geçersiz veri girilmesi,High,"Not detayı kutusuna 351 karakter (geçersiz veri) girerek 
+günün özetini oluşturulmadığını doğrulamak","1. Web App e gidilmiş 
+2. Login işlemi yapılmış olmalı
+3. Bugün ekranına girilmiş olmalı",,"1	Kullanıcı bugün elementine tıklar
+2	Başlık kutusuna geçerli bir veri girilir
+3	Not detayları kutusuna  351 karakter veri girilir
+4	Kaydet butonuna tıklanır
+5	Uyarı mesajı görüntülenir ","
+Film Sonrası
+Film beklediğimden güzeldi. Görsel efektler ve hikaye etkileyiciydi. Zaman nasıl geçti anlamadım. Salondaki atmosfer ve izleyicilerin tepkileri deneyimi keyifli hale getirdi. Filmden sonra arkadaşlarımla buluştum, fikir alışverişinde bulunduk. Akşam yemeği yiyip eve döndüm ve film hakkında yazılar okudum. Mutlu bir şekilde uykuya daldım.
+",uyarı mesajı görüntülenebilmeli,,QA - GÖRKEM,29.05.2024,29.05.2024,,,Blocked,,
+NEGATIVE,TC-044,Bugün Ekranı,Başlkık detayı kutusuna geçersiz veri girilmesi,High,Başlık kutusuna iki karakter (geçersiz veri) girerek günün özetini oluşturulmadığını doğrulamak,"1. Web App e gidilmiş 
+2. Login işlemi yapılmış olmalı
+3. Bugün ekranına girilmiş olmalı",,"1        Kullanıcı bugün elementine tıklar
+2        Başlık kutusuna iki karakterli bir veri girilir
+3        Not detayları kutusuna geçerli bir veri girilir
+4        Kaydet butonuna tıklanır
+5        Uyarı mesajı görüntülenir ","
+MV
+Film beklediğimden de güzeldi. Görsel efektler ve hikaye anlatımı oldukça etkileyiciydi. Film boyunca zaman nasıl geçti anlamadım. Salondaki atmosfer ve izleyicilerin tepkileri de deneyimi daha keyifli hale getirdi.
+",uyarı mesajı görüntülenebilmeli,,QA - GÖRKEM,29.05.2024,29.05.2024,,,Blocked,,
+NEGATIVE,TC-045,Bugün Ekranı,Başlık kutusununun silinmesi,Medium,başlık  kutusuna girilen verinin çarpı ikonuyla temizlendiğini doğrulamak,"1. Web App e gidilmiş 
+2. Login işlemi yapılmış olmalı
+3. Bugün ekranına girilmiş olmalı",,"1	Kullanıcı bugün elementine tıklar
+2	Başlık kutusuna geçerli bir veri girilir
+3	Çarpı ikonuna tıklanır
+4	başlık kutusunun temizlendiği doğrulanır",Sabah Hazırlıkları,başlık kutusu temizlenmelidir,,,29.05.2024,29.05.2024,,,Blocked,,
+NEGATIVE,TC-046,Bugün Ekranı,Not detayı kutusunun silinmesi Çarpı ikonu işlevselliği,Medium,not detayı kutusuna girilen verinin çarpı ikonuyla temizlendiğini doğrulamak,"1. Web App e gidilmiş 
+2. Login işlemi yapılmış olmalı
+3. Bugün ekranına girilmiş olmalı",,"1        Kullanıcı bugün elementine tıklar
+2        Not detayı  kutusuna geçerli bir veri girilir
+3        Çarpı ikonuna tıklanır
+4        başlık kutusunun temizlendiği doğrulanır","Sabah erkenden uyandım ve enerjik bir şekilde güne başladım. Hafif bir kahvaltı yaptıktan sonra spor çantamı hazırladım. Çantama spor kıyafetlerimi, su şişemi ve bir atıştırmalık aldım.",not detayı kutusu temizlenmiş olmalı,,QA - GÖRKEM,29.05.2024,29.05.2024,,,Blocked,,
+NEGATIVE,TC-047,Bugün Ekranı,veri girmeksizin gün özeti oluşturma,High,herhangi bir başlık ya da not eklemeden gün özeti oluşturulmadığını doğrulamak.,"1. Web App e gidilmiş 
+2. Login işlemi yapılmış olmalı
+3. Bugün ekranına girilmiş olmalı",,"1	Kullanıcı bugün elementine tıklar
+2	Başlık kutusunu boş bırakır
+3	Not detayı kutusunu boş bırakır
+4	Kaydet butonuna tıklar
+5	Ai gün özeti oluştur butonunun pasif olduğu doğrulanır
+6	Bugüne ait notunuz bulunmuyot yazısının varlığı doğrulanır",,bugüne ait notunuz bulunmuyor yazısı görüntülenmeli,,QA - GÖRKEM,29.05.2024,29.05.2024,,,Blocked,,
+POSITIVE,TC-048,Bugün Ekranı,Kaydedilen notun görüntülenmesi,High,kaydedilen notun notlar başlığı altında görüntülendiğini doğrulamak,"1. Web App e gidilmiş 
+2. Login işlemi yapılmış olmalı
+3. Bugün ekranına girilmiş olmalı",,"1	Kullanıcı bugün elementine tıklar
+2	Başlık kutusuna geçerli bir veri girilir
+3	Not detayı kutusuna geçerli bir veri girilir
+4	Kaydet butonuna tıklar
+5	Kayıtlı not notlar başlığı altında görüntülenir","
+
+Spor salonuna gitmek için evden çıktım ve kısa bir yürüyüş yaptım. Bu yürüyüş, vücudumu spora hazırlamak için iyi bir ısınma oldu.
+",Kayıtlı not notlar başlığı altında görüntülenmeli,,QA - GÖRKEM,29.05.2024,29.05.2024,,,Blocked,,
+POSITIVE,TC-049,Bugün Ekranı,Kaydedilen notun düzenlenmesi,Medium,Düzenlenen not içeriğinin güncellenmiş oılduğunu doğrulamak.,"1. Web App e gidilmiş 
+2. Login işlemi yapılmış olmalı
+3. Bugün ekranına girilmiş olmalı",,"1        Kullanıcı bugün elementine tıklar
+2        Başlık kutusuna geçerli bir veri girilir
+3        Not detayı kutusuna geçerli bir veri girilir
+4        Kaydet butonuna tıklar
+5        Kayıtlı not notlar başlığı altında görüntülenir
+6        3 noktaya tıklanır 
+7        Düzenle butonuna tıklanır 
+8        Not başlıgı düzenlenir
+9        Not detayı düzenlenir
+10        kaydet butonuna tıklanır
+11        Notun kaydedildiği doğrulanır","Ana Antrenman
+Bugün güç antrenmanı yapmayı planlamıştım. İlk olarak, ağırlık kaldırma egzersizlerine başladım. Squat, deadlift ve bench press gibi temel hareketlerle tüm vücudumu çalıştırdım. Her egzersiz arasında kısa molalar vererek su içtim ve enerjimi topladım.",Kullanıcı oluşturulan notu düzenleyebilmeli,,QA - GÖRKEM,29.05.2024,29.05.2024,,,Blocked,,
+POSITIVE,TC-050,Not ekleme ekranı,Resim çıktısı olmayan geçmiş tarihli günün özetini oluşturma,High,"Galeride boş görünen tarih alanlarına veri girerek geçmiş 
+tarihin gün özetini alabildiğini doğrulamak ","1. Web App e gidilmiş 
+2. Login işlemi yapılmış olmalı
+3. Bugün ekranına girilmiş olmalı",,"1	Kullanıcı galeriden bugün hariç bir gün seçer
+2	Galeri takviminde seçilen tarih ile açılan sayfadaki tarih aynı olmalıdır
+3	Başlık kutusuna geçerli bir veri girilir
+4	Not detayları kutusuna geçerli bir veri girilir
+5	Kaydet butonuna tıklanır
+6	Notlar bölmesinden notun varlığı doğrulanır
+7	AI günün özetini oluştur butonuna tıklanır
+8	uyarı mesajı görüntülenir
+9	Devam et butonuna tıklanır
+10	Çıktı sayfası görüntülenir 
+11	resim ve notların görüntülendiği doğrulanır","Kardiyo ve Soğuma
+Ağırlık antrenmanından sonra 20 dakika boyunca eliptik bisiklette kardiyo yaptım. Bu, kalp atış hızımı artırarak yağ yakımını destekledi. Kardiyo sonrasında, vücudumu soğutmak için hafif esneme hareketleri yaptım.",geçmiş tarihin gün özeti alınabilmeli,,QA - GÖRKEM,29.05.2024,29.05.2024,,,Blocked,,
+POSITIVE,TC-051,Not ekleme ekranı,"Birden fazla kaydedilen notun scroll yapılarak başlık detaylarıyla 
+birlikte görüntülenmesi",High,birden fazla notun görüntülenebildiğini doğrulamak,"1. Web App e gidilmiş 
+2. Login işlemi yapılmış olmalı
+3. Bugün ekranına girilmiş olmalı",,"1	Kullanıcı galeriden bugün hariç bir gün seçer
+2	Başlık kutusuna geçerli bir veri girilir
+3	Not detayı kutusuna geçerli bir veri girilir
+4	Kaydet butonuna tıklanır 
+5	bu işlem iki kez tekrar edilir
+6	Kayıtlı notlar, notlar başlığı altında görüntülenir","
+Spor Sonrası
+Antrenmanımı bitirdikten sonra duş aldım ve rahat kıyafetlerimi giydim. Spor salonundan ayrıldıktan sonra hafif bir öğle yemeği için bir kafeye gittim. Sağlıklı bir salata ve protein smoothie ile enerjimi yeniledim.
+
+Ağırlık antrenmanından sonra 20 dakika boyunca eliptik bisiklette kardiyo yaptım. Bu, kalp atış hızımı artırarak yağ yakımını destekledi. Kardiyo sonrasında, vücudumu soğutmak için hafif esneme hareketleri yaptım.
+Eve döndüğümde kısa bir süre dinlendim. Kaslarımın toparlanmasına yardımcı olmak için biraz esneme ve meditasyon yaptım. Antrenman günlüğüme bugün yaptığım egzersizleri ve hislerimi not ettim. Günün sonunda, spor yapmanın verdiği mutluluk ve tatmin duygusuyla rahat bir uyku çektim.",birden fazla girilen notlar ekran scrol yapılarak görüntülenebilmeli,,QA - GÖRKEM,29.05.2024,29.05.2024,,,Blocked,,
+POSITIVE,TC-052,Karşılama Ekranı,"Karşılama ekranının Web elementlerinin  görüntüllenebilirliğini 
+ve işlevselliğini test etme",Medium,web elementlerin görüntülenebilirliği ve işlevselliğini doğrulamak,web sitesi ulaşılabilir olmalı,,"1.       Web sitesine gidilir
+2.       Kayıt ekranı görüntülenir
+3.       resim web elementinini görüntülendiği doğrulanır
+4.       Sizin anılarınızı kalıcı hale getiriyoruz Günlük tutmanın kolay ve keyifli yoludur. Her gününüzü özenle kaydedin, anılarınızı güvende tutun ve yaşamınızı daha derinlemesine keşfedn web elementlerinin görüntülendiği doğrulanır
+5.       Nasıl çalışır web elementi doğrulanır
+6.       O gün yaşadığınız önemli olayları ve duygularınızı günlüğünüze not edin- Gün içindeki özel anlarınızı sizin için ai görselleştirsin. - görselleştirilen günlerinizi düzenli olarak takip edin web elementleri görntülenir
+7.      Sen de günü Daystory'e anlat ve anılarının hikayesini canlandırmaya başla! web elementi görüntülenir
+8.      Her iki giriş yap butonu giriş yap sayfasına gyönlendirmelidir
+9.      Mobil uygulama indir web elementi, google play ve ios web elementi görüntülenir 
+10.    telefon numarası ve mail adresi görüntülenmeli
+11.    her iki kayıt ol butonu Kayıt sayfasına yönlendirmeli",,"Web elementlerin görüntülenebilirliği ve işlevselliği doğrulanır
+
+
+
+
+
+
+
+
+",,QA - GÖRKEM,29.05.2024,29.05.2024,,,Blocked,,
